@@ -1,0 +1,68 @@
+.mar-top{
+    margin-top: 15px;
+}
+header > .menu-block {
+    background-color: #838dff;
+}
+
+.basket{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+
+.basket > a{
+    padding: 10px;
+    background-color: #ffc457;
+}
+
+.pagination {
+    width: 300px;
+}
+
+.menu, .pagination ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.pagination ul li a{
+    color: blue;
+}
+
+.pagination ul li.active a{
+    color: red;
+}
+.pagination ul li a{
+    text-decoration: none;
+}
+
+.sort_check{
+    background-color: #74e7ff;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.product{
+    width: 22%;
+    margin: 20px 10px 0 10px;
+}
+
+.products .container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cart-button{
+    display: block;
+    margin-top: 40px;
+    width: 150px;
+    background-color: #ffc457;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
