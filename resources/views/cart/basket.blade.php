@@ -39,25 +39,7 @@
             @endforeach
             <tr>
                 <th colspan="4" class="text-right">Итого</th>
-                @php
-                    if(count($products) == 2){
-                        $basketCostNew = $basketCost * 0.9;
-                        $text = 'У вас 2 товара, ловите скидку 10% на весь заказ';
-                    }
-                    if (count($products) == 3){
-                        $basketCostNew = $basketCost * 0.85;
-                        $text = 'У вас 3 товара, ловите скидку 15% на весь заказ';
-                    }
-                    if (date("l") == "Saturday" || date("l") == "Sunday"){
-                        $basketCostNew = $basketCost * 0.80;
-                        $text = 'Сегодня воскресенье, ловите скидку 20% на весь заказ';
-                    }
-                @endphp
-                @if($basketCostNew)
-                <th><del>{{ number_format($basketCost, 1, '.', '') }}</del> / {{ number_format($basketCostNew, 1, '.', '') }}</th>
-                @else
-                    <th>{{ number_format($basketCost, 1, '.', '') }}</th>
-                @endif
+                <th>{{ number_format($basketCost, 1, '.', '') }}</th>
             </tr>
         </table>
         @if($text)
